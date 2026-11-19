@@ -1,0 +1,69 @@
+{
+"source": "web",
+"orders": [
+{
+"order_id": "W01",
+"customer": {
+"id": "C001",
+"city": "Pune"
+},
+"items": [
+{
+"sku": "P01",
+"qty": 1
+},
+{
+"sku": "P02",
+"qty": 2
+}
+]
+},
+{
+"order_id": "W02",
+"customer": {
+"id": "C003",
+"city": "Chennai"
+},
+"items": [
+{
+"sku": "P03",
+"qty": 1
+}
+]
+}
+]
+}
+
+LEVEL 1 KEYS - SOURCE, ORDERS
+LEVEL2 KEYS- ORDER_ID,CUSTOMER, ITEMS
+LEVEL3 KEYS- CUSTOMER[ID,CITY],ITEMS[SKU,QTY]
+
+[{
+"order_id": "W01",
+"customer": {
+"id": "C001",
+"city": "Pune"
+},
+"items": [
+{
+"sku": "P01",
+"qty": 1
+},
+{
+"sku": "P02",
+"qty": 2
+},
+{
+"order_id": "W02",
+"customer": {
+"id": "C003",
+"city": "Chennai"
+},
+"items": [
+{
+"sku": "P03",
+"qty": 1
+}
+]
+}
+]
